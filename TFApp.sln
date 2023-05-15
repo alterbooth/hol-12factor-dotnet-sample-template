@@ -5,8 +5,6 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TFApp_before", "TFApp_before\TFApp_before.csproj", "{F7BD944B-7235-482A-93A8-964F780B28AF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TFApp_after", "TFApp_after\TFApp_after.csproj", "{BF03D6FA-67F9-49DD-8715-1AD7AE754294}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目", "ソリューション項目", "{40BAABEA-21DA-4490-9385-673D4F4CE085}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
