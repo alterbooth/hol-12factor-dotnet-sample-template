@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TFApp_before.props" />
+</Project>
