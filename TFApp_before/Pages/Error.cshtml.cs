@@ -18,5 +18,6 @@ public class ErrorModel : PageModel
     public void OnGet()
     {
         RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+        _logger.LogError("エラーが発生しました。RequestId={RequestId}", RequestId);
     }
 }
