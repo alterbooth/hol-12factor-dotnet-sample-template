@@ -1,4 +1,6 @@
-﻿namespace TFApp.Pages;
+﻿using TFApp_library;
+
+namespace TFApp.Pages;
 
 public class IndexModel : PageModel
 {
@@ -9,7 +11,10 @@ public class IndexModel : PageModel
         _logger = logger;
     }
 
+    public string? Message { get; set; }
+
     public void OnGet()
     {
+        Message = new SampleClassInLibrary().Message;
     }
 }
