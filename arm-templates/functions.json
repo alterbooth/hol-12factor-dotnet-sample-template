@@ -46,21 +46,13 @@
       "metadata": {
         "description": "The language worker runtime to load in the function app."
       }
-    },
-    "linuxFxVersion": {
-      "type": "string",
-      "defaultValue": "DOTNET|8.0",
-      "metadata": {
-        "description": "Required for Linux app to represent runtime stack in the format of 'runtime|runtimeVersion'. For example: 'python|3.9'"
-      }
     }
   },
   "variables": {
     "functionAppName": "[parameters('appName')]",
     "hostingPlanName": "[parameters('appName')]",
     "storageAccountName": "[format('{0}azfunctions', uniqueString(resourceGroup().id))]",
-    "functionWorkerRuntime": "[parameters('runtime')]",
-    "linuxFxVersion": "[parameters('linuxFxVersion')]"
+    "functionWorkerRuntime": "[parameters('runtime')]"
   },
   "resources": [
     {
@@ -125,8 +117,7 @@
             }
           ],
           "ftpsState": "FtpsOnly",
-          "minTlsVersion": "1.2",
-          "linuxFxVersion": "[variables('linuxFxVersion')]"
+          "minTlsVersion": "1.2"
         },
         "httpsOnly": true
       },
